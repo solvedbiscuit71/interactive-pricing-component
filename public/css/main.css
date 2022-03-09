@@ -71,11 +71,11 @@ body {
   top: 3px;
 }
 
-.toggle-thumb--monthly {
+.toggle-thumb--month {
   left: 4px;
 }
 
-.toggle-thumb--yearly {
+.toggle-thumb--year {
   right: 4px;
 }
 
@@ -102,6 +102,10 @@ body {
 
   background-color: var(--range-tracker-bg);
   border-radius: .5em;
+}
+
+.range:hover {
+  cursor: pointer;
 }
 
 .range::-webkit-slider-thumb {

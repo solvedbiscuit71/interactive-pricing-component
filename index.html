@@ -25,24 +25,24 @@
     <div class="card">
       <div class="pricing-section">
         <div class="pricing__pageviews">
-          <span>100k</span> pageviews
+          <span id="pageviews">100k</span> pageviews
         </div>
 
-        <input class="range" type="range" min="0" max="4" step="1" value="2">
+        <input id="range" class="range" type="range" min="0" max="4" step="1" value="2">
 
         <div class="pricing__price">
-          <span class="amount">$16.00</span> 
-          <span class="duration"> / month</span>
+          <span class="amount" id="amount">$16.00</span> 
+          <span class="duration" id="duration"> / month</span>
         </div>
 
         <div class="pricing__billing">
-          <div class="monthly">Monthly Billing</div>
+          <div class="month">Monthly Billing</div>
 
-          <div class="btn btn--toggle">
-            <span class="toggle-thumb--monthly"></span>
+          <div class="btn btn--toggle" id="toggleBtn">
+            <span class="toggle-thumb--month" id="toggleSlider"></span>
           </div>
 
-          <div class="yearly">
+          <div class="year">
             Yearly Billing
             <span class="discount">-25%</span>
           </div>
@@ -59,5 +59,7 @@
       </div>
     </div>
   </main>
+
+  <script src="public/js/app.js"></script>
 </body>
 </html>
