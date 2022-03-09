@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Interactive pricing component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
   <main>
     <div class="header">
       <h1 class="header__title">Simple, traffic-based pricing</h1>
-      <p class="header__para">Sign-up for our 30-day trial. No credit card required.</p>
+      <p class="header__para">Sign-up for our 30-day trial.<span></span> No credit card required.</p>
     </div>
 
     <div class="card">
@@ -18,23 +28,23 @@
           <span>100k</span> pageviews
         </div>
 
-        <input class="pricing__slider slider--3" type="range" min="0" max="4" step="1" value="2">
+        <input class="input input--range" type="range" min="0" max="4" step="1" value="2">
 
         <div class="pricing__price">
-          $ <span class="amount">16.00</span> 
-          / <span class="duration">month</span>
+          <span class="amount">$16.00</span> 
+          <span class="duration"> / month</span>
         </div>
 
         <div class="pricing__billing">
           <div class="monthly">Monthly Billing</div>
 
           <div class="btn btn--toggle">
-            <span class="toggle-btn--monthly"></span>
+            <span class="toggle-thumb--monthly"></span>
           </div>
 
           <div class="yearly">
             Yearly Billing
-            <span>-25%</span>
+            <span class="discount">-25%</span>
           </div>
         </div>
       </div>
